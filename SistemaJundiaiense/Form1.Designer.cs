@@ -29,13 +29,25 @@ namespace SistemaJundiaiense
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnEnviarDados = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnEnviarDados
+            // 
+            this.btnEnviarDados.Location = new System.Drawing.Point(121, 27);
+            this.btnEnviarDados.Name = "btnEnviarDados";
+            this.btnEnviarDados.Size = new System.Drawing.Size(212, 76);
+            this.btnEnviarDados.TabIndex = 0;
+            this.btnEnviarDados.Text = "Dados";
+            this.btnEnviarDados.UseVisualStyleBackColor = true;
+            this.btnEnviarDados.Click += new System.EventHandler(this.btnEnviarDados_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(340, 440);
+            this.ClientSize = new System.Drawing.Size(454, 288);
+            this.Controls.Add(this.btnEnviarDados);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -43,6 +55,8 @@ namespace SistemaJundiaiense
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnEnviarDados;
     }
 }
 
