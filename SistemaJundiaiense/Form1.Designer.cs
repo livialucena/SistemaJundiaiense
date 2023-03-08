@@ -40,7 +40,6 @@ namespace SistemaJundiaiense
             this.btnEnviarDados.TabIndex = 0;
             this.btnEnviarDados.Text = "Dados";
             this.btnEnviarDados.UseVisualStyleBackColor = true;
-            this.btnEnviarDados.Click += new System.EventHandler(this.btnEnviarDados_Click);
             // 
             // Form1
             // 
@@ -50,6 +49,7 @@ namespace SistemaJundiaiense
             this.Controls.Add(this.btnEnviarDados);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }

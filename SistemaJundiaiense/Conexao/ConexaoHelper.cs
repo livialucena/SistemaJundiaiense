@@ -11,20 +11,26 @@ namespace SistemaJundiaiense.Conexao
     {
        
 
-        public  static  void EnviarDado(string comando)
+        public  static  void Executar(string query, bool resultado)
         {
             Conexao conexao = new Conexao();
             SqlCommand cmd = new SqlCommand();
 
-            cmd.CommandText = comando;
+            cmd.CommandText = query;
 
             try
             {
                 //Conectar ao banco de dados
                 cmd.Connection = conexao.Conectar();
 
-                //Enviar dados ao banco de dados
-                cmd.ExecuteNonQuery();
+                if(resultado)
+                {
+                    cmd.ExecuteReader();
+                }
+                else
+                {
+                    cmd.ExecuteNonQuery();
+                }
 
                 //Desconectar
                 conexao.desconectar();

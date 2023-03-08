@@ -32,27 +32,5 @@ namespace SistemaJundiaiense.Conexao
             }
 
         }
-
-                    /*create database dbjund;
-             use dbjund;
-
-
-            Create table tblpsa
-            (
-                id_psa int primary key,
-                nome_psa varchar(40),
-                pass_psa varchar(10)
-            )
-
-            INSERT INTO TBLPSA (id_psa, NOME_PSA, PASS_PSA) VALUES (1, 'Livia', 'TESTE123');
-
-
-
-            select *
-	            from tblpsa
-
-
-                    */
-
     }
 }

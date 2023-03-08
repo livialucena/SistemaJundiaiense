@@ -1,4 +1,4 @@
-﻿using SistemaJundiaiense.Models;
+﻿using SistemaJundiaiense.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,10 +18,10 @@ namespace SistemaJundiaiense
             InitializeComponent();
         }
 
-        private void btnEnviarDados_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            TesteDataBaseRepositorio.CriarTabela();
-            MessageBox.Show(@"Dado inserido com sucesso", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            UsuarioForm usuario = new UsuarioForm();
+            usuario.Show();
         }
     }
 }
