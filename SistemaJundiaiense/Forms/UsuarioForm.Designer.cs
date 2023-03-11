@@ -75,6 +75,7 @@ namespace SistemaJundiaiense.Forms
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.novoToolStripButton,
             this.abrirToolStripButton,
@@ -83,8 +84,10 @@ namespace SistemaJundiaiense.Forms
             this.toolStripSeparator,
             this.ajudaToolStripButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.MaximumSize = new System.Drawing.Size(0, 50);
+            this.toolStrip1.MinimumSize = new System.Drawing.Size(0, 40);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(610, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(610, 40);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -94,7 +97,7 @@ namespace SistemaJundiaiense.Forms
             this.novoToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("novoToolStripButton.Image")));
             this.novoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.novoToolStripButton.Name = "novoToolStripButton";
-            this.novoToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.novoToolStripButton.Size = new System.Drawing.Size(23, 37);
             this.novoToolStripButton.Text = "&Novo";
             // 
             // abrirToolStripButton

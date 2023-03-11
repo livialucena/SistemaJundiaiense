@@ -105,6 +105,7 @@ namespace SistemaJundiaiense.Forms
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.novoToolStripButton,
             this.abrirToolStripButton,
@@ -117,8 +118,10 @@ namespace SistemaJundiaiense.Forms
             this.toolStripSeparator1,
             this.ajudaToolStripButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.MaximumSize = new System.Drawing.Size(0, 50);
+            this.toolStrip1.MinimumSize = new System.Drawing.Size(0, 40);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1232, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1237, 40);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -128,7 +131,7 @@ namespace SistemaJundiaiense.Forms
             this.novoToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("novoToolStripButton.Image")));
             this.novoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.novoToolStripButton.Name = "novoToolStripButton";
-            this.novoToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.novoToolStripButton.Size = new System.Drawing.Size(23, 37);
             this.novoToolStripButton.Text = "&Novo";
             // 
             // abrirToolStripButton
@@ -206,11 +209,12 @@ namespace SistemaJundiaiense.Forms
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.tabControl1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 25);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 40);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1232, 617);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1237, 619);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // tabControl1
@@ -227,22 +231,24 @@ namespace SistemaJundiaiense.Forms
             // 
             // xtpFiltrar
             // 
+            this.xtpFiltrar.AllowDrop = true;
             this.xtpFiltrar.Controls.Add(this.flowLayoutPanel2);
             this.xtpFiltrar.Location = new System.Drawing.Point(4, 22);
             this.xtpFiltrar.Name = "xtpFiltrar";
             this.xtpFiltrar.Padding = new System.Windows.Forms.Padding(3);
-            this.xtpFiltrar.Size = new System.Drawing.Size(1225, 604);
+            this.xtpFiltrar.Size = new System.Drawing.Size(1225, 588);
             this.xtpFiltrar.TabIndex = 0;
             this.xtpFiltrar.Text = "Filtrar";
             this.xtpFiltrar.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel2
             // 
+            this.flowLayoutPanel2.AutoSize = true;
             this.flowLayoutPanel2.Controls.Add(this.dataGridView1);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1219, 598);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1219, 582);
             this.flowLayoutPanel2.TabIndex = 0;
             // 
             // dataGridView1
@@ -250,7 +256,7 @@ namespace SistemaJundiaiense.Forms
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1211, 483);
+            this.dataGridView1.Size = new System.Drawing.Size(1213, 579);
             this.dataGridView1.TabIndex = 0;
             // 
             // xtpEdicao
@@ -632,16 +638,22 @@ namespace SistemaJundiaiense.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1232, 642);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1237, 659);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.toolStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CadastroClienteForm";
-            this.Text = "CadastroClienteForm";
+            this.Text = "Cadastro de Cliente";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.xtpFiltrar.ResumeLayout(false);
+            this.xtpFiltrar.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.xtpEdicao.ResumeLayout(false);
