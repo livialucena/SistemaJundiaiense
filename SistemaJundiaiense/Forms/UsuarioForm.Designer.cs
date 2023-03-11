@@ -143,6 +143,7 @@ namespace SistemaJundiaiense.Forms
             // 
             this.tabControl1.Controls.Add(this.xtpFiltra);
             this.tabControl1.Controls.Add(this.xtpEdicao);
+            this.tabControl1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tabControl1.Location = new System.Drawing.Point(12, 43);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
